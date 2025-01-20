@@ -41,8 +41,19 @@ p {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 15px #0003;
+    transform: scale(1);
+    will-change: transform;
+    transition: transform 0.5s ease;
 }
 
+.card-container:hover {
+    transform: scale(1.1);
+}
+
+.image-container {
+    cursor: pointer;
+}
 
 .card-img {
     display: block;
